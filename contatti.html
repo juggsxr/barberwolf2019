@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contatti | Barbiere Vomero Marino</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <style>
+/* Questo codice rende la mappa di Google scura e coordinata col sito */
+.map-container iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    filter: grayscale(1) invert(92%) contrast(83%); /* Effetto Dark Mode */
+    border: 1px solid #222;
+}
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin-top: 40px;
+        }
+
+        .contact-info {
+            text-align: left;
+        }
+
+        .info-card {
+            background: var(--grigio);
+            padding: 30px;
+            border: 1px solid #222;
+            margin-bottom: 20px;
+            transition: 0.3s;
+        }
+
+        .info-card:hover {
+            border-color: var(--oro);
+        }
+
+        .info-card h3 {
+            color: var(--oro);
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 15px;
+        }
+
+        .info-card p, .info-card a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.1rem;
+            margin: 0;
+            display: block;
+        }
+
+        .map-container {
+            border: 1px solid #222;
+            height: 100%;
+            min-height: 400px;
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: 0;
+            filter: grayscale(1) invert(1) contrast(1.2); /* Mappa scura per matchare il sito */
+        }
+
+        .social-links {
+            margin-top: 20px;
+            display: flex;
+            gap: 15px;
+        }
+
+        .social-btn {
+            background: #222;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            transition: 0.3s;
+        }
+
+        .social-btn:hover {
+            background: var(--oro);
+            color: black;
+        }
+
+        @media (max-width: 850px) {
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+            .map-container {
+                height: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <a href="index.html" class="logo">Barbiere Vomero <span style="font-weight:300">MARINO</span></a>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="servizi.html">Servizi</a>
+        <a href="prenota.html">Prenota</a>
+        <a href="shop.html">Shop</a>
+        <a href="contatti.html" style="color:var(--oro)">Contatti</a>
+                <a href="tel:+390815560080" style="color: var(--oro); font-weight:bold;">📞 081 556 0080</a>
+    </nav>
+</header>
+
+<section>
+    <div data-aos="fade-down">
+        <p class="sub">Dove Trovarci</p>
+        <h2>Vieni a trovarci al Vomero</h2>
+    </div>
+
+    <div class="contact-grid">
+        
+        <div class="contact-info" data-aos="fade-right">
+            <div class="info-card">
+                <h3>Indirizzo</h3>
+                <p>Via Raffaele Morghen, 68, 80129 Napoli NA, Italy</p>
+                <a href="https://www.google.com/maps/dir//Via+Raffaele+Morghen,+68,+Napoli" target="_blank" style="color: var(--oro); font-size: 0.8rem; margin-top: 10px; font-weight: bold;">→ APRI NAVIGATORE</a>
+            </div>
+
+            <div class="info-card">
+                <h3>Telefono</h3>
+                <a href="tel:+390815560080">+39 081 556 0080</a>
+            </div>
+
+            <div class="info-card">
+                <h3>Orari di Apertura</h3>
+                <p>Lun - Ven: 09:00 - 14:00 | 16:00 - 20:00</p> 
+                <p>Sab: 09:00 - 20:00</p>
+                <p>Domenica: Chiuso</p>
+            </div>
+
+            <div class="social-links">
+                <a href="#" class="social-btn">Instagram</a>
+                <a href="#" class="social-btn">Facebook</a>
+            </div>
+        </div>
+
+        <div class="map-container" data-aos="fade-left">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6036.58779065956!2d14.233266375717264!3d40.84347082955715!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x133b08f9b87de3dd%3A0xc238b355b2f7f2da!2sBarbiere%20Vomero%20%7C%20Marino!5e0!3m2!1sit!2sit!4v1774942473185!5m2!1sit!2sit" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    <div style="display:flex; justify-content: space-between; align-items: center;">
+        <span>© 2026 Barbiere Vomero Marino. Napoli.</span>
+        <a href="https://calendly.com/login" target="_blank" style="color:#333; text-decoration:none; font-size: 0.7rem;">Accesso Gestionale</a>
+    </div>
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init({
+        duration: 1000,
+        once: true
+    });
+</script>
+
+</body>
+</html>
