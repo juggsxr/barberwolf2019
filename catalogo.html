@@ -1,1 +1,116 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contatti | Barbiere Vomero Marino</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
+    <style>
+/* Questo codice rende la mappa di Google scura e coordinata col sito */
+.map-container iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    filter: grayscale(1) invert(92%) contrast(83%); /* Effetto Dark Mode */
+    border: 1px solid #222;
+}
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin-top: 40px;
+        }
+
+        .contact-info {
+            text-align: left;
+        }
+
+        .info-card {
+            background: var(--grigio);
+            padding: 30px;
+            border: 1px solid #222;
+            margin-bottom: 20px;
+            transition: 0.3s;
+        }
+
+        .info-card:hover {
+            border-color: var(--oro);
+        }
+
+        .info-card h3 {
+            color: var(--oro);
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 15px;
+        }
+
+        .info-card p, .info-card a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.1rem;
+            margin: 0;
+            display: block;
+        }
+
+        .map-container {
+            border: 1px solid #222;
+            height: 100%;
+            min-height: 400px;
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: 0;
+            filter: grayscale(1) invert(1) contrast(1.2); /* Mappa scura per matchare il sito */
+        }
+
+        .social-links {
+            margin-top: 20px;
+            display: flex;
+            gap: 15px;
+        }
+
+        .social-btn {
+            background: #222;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            transition: 0.3s;
+        }
+
+        .social-btn:hover {
+            background: var(--oro);
+            color: black;
+        }
+
+        @media (max-width: 850px) {
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+            .map-container {
+                height: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+    <a href="index.html" class="logo">Barbiere Vomero <span style="font-weight:300">MARINO</span></a>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="servizi.html">Servizi</a>
+        <a href="prenota.html">Prenota</a>
+        <a href="contatti.html" style="color:var(--oro)">Contatti</a>
+        <a href="catalogo.html">Catalogo</a>
+    </nav>
+</header>
+</body>
