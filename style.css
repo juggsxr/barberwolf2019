@@ -43,6 +43,31 @@ header {
     font-size: 1.1rem; 
 }
 
+/* Stile per il Logo Immagine */
+.logo-container {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.logo-img {
+    height: 55px; /* Questa è l'altezza ideale per la navbar */
+    width: auto;  /* Mantiene le proporzioni originali */
+    transition: transform 0.3s ease;
+}
+
+.logo-img:hover {
+    transform: scale(1.05); /* Effetto leggero quando ci passi sopra */
+}
+
+/* Sistema l'altezza dell'header se il logo tocca i bordi */
+header {
+    padding: 10px 5%; 
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
 nav a { 
     color: white; 
     text-decoration: none; 
